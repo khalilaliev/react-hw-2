@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Button from "../Button/Button";
 
 const CardItem = ({ text, tasks, onChangeStatus }) => {
-  const [lenghtIndex, setLenghtIndex] = useState(tasks.length);
+  const [lengthIndex, setLenghtIndex] = useState(tasks.length);
   useEffect(() => {
     setLenghtIndex(tasks.length);
   }, [tasks]);
@@ -11,7 +11,7 @@ const CardItem = ({ text, tasks, onChangeStatus }) => {
       <div className="card h-600 border border-gray-500 border-opacity-50">
         <div className="card-body gap-6">
           <h2 className="card-header text-3xl">
-            {text} {lenghtIndex}
+            {text} {lengthIndex}
           </h2>
           {tasks.map((task) => (
             <div key={task.id} className=" flex items-center gap-3">
