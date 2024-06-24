@@ -36,8 +36,12 @@ export const todoTasks = [
   },
 ];
 
-export const columns = [
+const columns = [
   { title: "To Do", status: 0 },
   { title: "In Progress", status: 1 },
   { title: "Done", status: 2 },
 ];
+
+const API = "https://6675570ea8d2b4d072efa0bb.mockapi.io/tasks";
+
+export { columns, API };
